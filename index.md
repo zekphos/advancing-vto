@@ -1,5 +1,5 @@
 ---
-layout: single
+
 title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 # header:
 #   image: /assets/img/vto-banner.jpg
