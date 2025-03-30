@@ -1,3 +1,1 @@
-theme: jekyll-theme-minimal
-title: Advancing Fine-grained and Controllable Virtual Try-On
-description: School project
+remote_theme: jekyll/minima
