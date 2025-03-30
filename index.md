@@ -47,19 +47,11 @@ To handle multiple physical garment images through GarmentNet:
 Our implementation demonstrates strong performance across various garment combinations:
 
 ![Results Gallery](assets/images/multigarment_demo_image_1.jpg)
-
-### Quantitative Evaluation
-
-| Metric | Max Pooling (Main method) | Avg Pooling | Direct Resize | Late Fusion | IP-Adapter (10 Epochs) | IP-Adapter (20 Epochs) |
-|--------|---------------------------|-------------|---------------|-------------|------------------------|------------------------|
-| FID ↓ | 88.190 | 88.818 | 89.319 | 109.483 | 104.566 | 192.978 |
-| KID ↓ | 4.013 | 2.967 | 3.772 | 30.818 | 16.860 | 106.554 |
-| SSIM ↑ | 0.807 | 0.806 | 0.807 | 0.816 | 0.777 | 0.663 |
-| LPIPS ↓ | 0.157 | 0.158 | 0.157 | 0.149 | 0.180 | 0.293 |
-
-## Team
-
-This project is part of the "Advancing Fine-grained and Controllable Virtual Try-On" research initiative:
+![Results Gallery](assets/images/multigarment_demo_image_2.jpg)
+![Results Gallery](assets/images/multigarment_demo_image_3.jpg)
+![Results Gallery](assets/images/multigarment_demo_image_4.jpg)
+![Results Gallery](assets/images/multigarment_demo_image_5.jpg)
+![Results Gallery](assets/images/multigarment_demo_image_6.jpg)
 
 ### Multi-Garment Virtual Try-On
 Enhanced IDM-VTON for simultaneous processing of upper and lower garments
