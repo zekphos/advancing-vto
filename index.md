@@ -5,13 +5,9 @@ title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 #   image: /assets/img/vto-banner.jpg
 ---
 
-# Advancing Fine-grained and Controllable Virtual Try-On
-
 ## Multi-Garment Virtual Try-on: Enhancing IDM-VTON for Comprehensive Digital Fashion Visualization
 
 This project presents an enhancement to IDM-VTON that enables simultaneous processing of upper and lower garments, creating a comprehensive virtual try-on system that maintains the high-fidelity detail preservation of the original architecture.
-
-![Demo Image](assets/images/multigarment_demo_image_1.jpg)
 
 ## Overview
 
@@ -50,7 +46,7 @@ To handle multiple physical garment images through GarmentNet:
 
 Our implementation demonstrates strong performance across various garment combinations:
 
-![Results Gallery](assets/images/results.jpg)
+![Results Gallery](assets/images/multigarment_demo_image_1.jpg)
 
 ### Quantitative Evaluation
 
