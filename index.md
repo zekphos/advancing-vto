@@ -20,15 +20,13 @@ title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 ## Overview
 
 <div style="text-align: justify; text-justify: inter-word;">
-Our research introduces two innovative approaches to virtual try-on technology, each addressing distinct challenges in the field:
-
+<p>Our research introduces two innovative approaches to virtual try-on technology, each addressing distinct challenges in the field:</p>
 </div>
 
 ### Multi-Garment Virtual Try-On
 
 <div style="text-align: justify; text-justify: inter-word;">
-Extends IDM-VTON's architecture to handle multiple garments simultaneously through:
-
+<p>Extends IDM-VTON's architecture to handle multiple garments simultaneously through:</p>
 </div>
 - Vertical stacking of garment images for spatial coherence
 - Parallel CLIP processing with max pooling feature extraction
@@ -38,8 +36,7 @@ Extends IDM-VTON's architecture to handle multiple garments simultaneously throu
 ### Text-Guided Virtual Try-On
 
 <div style="text-align: justify; text-justify: inter-word;">
-Enhances the EditAnything framework for intuitive clothing modification through:
-
+<p>Enhances the EditAnything framework for intuitive clothing modification through:</p>
 </div>
 - Automatic garment detection using SAM and GroundingDINO
 - Advanced prompt engineering for precise modification control
@@ -51,8 +48,7 @@ Enhances the EditAnything framework for intuitive clothing modification through:
 ### Multi-Garment Processing
 
 <div style="text-align: justify; text-justify: inter-word;">
-The multi-garment implementation builds upon IDM-VTON's architecture with several key innovations:
-
+<p>The multi-garment implementation builds upon IDM-VTON's architecture with several key innovations:</p>
 </div>
 
 **CLIP Feature Processing:**
@@ -72,8 +68,7 @@ The multi-garment implementation builds upon IDM-VTON's architecture with severa
 ### Text-Guided Modification
 
 <div style="text-align: justify; text-justify: inter-word;">
-The text-guided virtual try-on system follows a multi-stage process:
-
+<p>The text-guided virtual try-on system follows a multi-stage process:</p>
 </div>
 
 **Input Processing:**
@@ -97,9 +92,7 @@ The text-guided virtual try-on system follows a multi-stage process:
 ### Multi-Garment Virtual Try-On
 
 <div style="text-align: justify; text-justify: inter-word;">
-Our implementation demonstrates strong performance across various garment combinations:
-
-
+<p>Our implementation demonstrates strong performance across various garment combinations:</p>
 </div>
 
 ![Multi-Garment Results 4](assets/images/multigarment_demo_image_4.jpg)
@@ -109,9 +102,7 @@ Our implementation demonstrates strong performance across various garment combin
 ### Text-Guided Virtual Try-On
 
 <div style="text-align: justify; text-justify: inter-word;">
-The text-guided approach shows impressive capabilities in modifying garments based on natural language descriptions:
-
-
+<p>The text-guided approach shows impressive capabilities in modifying garments based on natural language descriptions:</p>
 </div>
 
 ![Text-Guided Results 1](assets/images/textguided_demo_image_1.jpeg)
@@ -137,7 +128,7 @@ The text-guided approach shows impressive capabilities in modifying garments bas
 ## Academic Purpose
 
 <div style="text-align: justify; text-justify: inter-word;">
-This work was conducted solely for academic and research purposes as part of a university capstone project. The implementations and adaptations presented here aim to explore and advance virtual try-on technology from an educational perspective, contributing to the academic discourse in this field. Neither implementation is intended for commercial deployment, and both serve primarily as technical demonstrations of what's possible within the current technological framework. Our goal is to share knowledge, foster further research, and provide learning opportunities for students and researchers interested in computer vision, machine learning, and fashion technology applications.
+<p>This work was conducted solely for academic and research purposes as part of a university capstone project. The implementations and adaptations presented here aim to explore and advance virtual try-on technology from an educational perspective, contributing to the academic discourse in this field. Neither implementation is intended for commercial deployment, and both serve primarily as technical demonstrations of what's possible within the current technological framework. Our goal is to share knowledge, foster further research, and provide learning opportunities for students and researchers interested in computer vision, machine learning, and fashion technology applications.
 
 </div>
 
@@ -162,6 +153,5 @@ All credit for the original implementations goes to their respective authors and
 ## Acknowledgments
 
 <div style="text-align: justify; text-justify: inter-word;">
-We extend our deepest gratitude to Assistant Professor Xu Bingjie for her exceptional guidance, technical insights, and unwavering support throughout this project. Her expertise in computer vision and machine learning significantly shaped our approach and implementation strategies. Professor Xu's patient mentorship, thoughtful feedback, and encouragement to explore innovative solutions were instrumental in helping us overcome technical challenges and achieve our research objectives. We are particularly thankful for her dedication in providing timely reviews of our progress and for creating an environment that fostered both academic rigor and creative exploration.
-
+We extend our deepest gratitude to Assistant Professor Xu Bingjie for her exceptional guidance, technical insights, and unwavering support throughout this project. Her expertise in computer vision and machine learning significantly shaped our approach and implementation strategies. Professor Xu's patient mentorship, thoughtful feedback, and encouragement to explore innovative solutions were instrumental in helping us overcome technical challenges and achieve our research objectives. We are particularly thankful for her dedication in providing timely reviews of our progress and for creating an environment that fostered both academic rigor and creative exploration.</p>
 </div>
