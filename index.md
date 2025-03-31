@@ -34,8 +34,6 @@ Enhances the EditAnything framework for intuitive clothing modification through:
 
 ## Method
 
-![Multi Garment Architecture Overview](assets/images/multigarment_architecture.png)
-
 ### Multi-Garment Processing
 
 The multi-garment implementation builds upon IDM-VTON's architecture with several key innovations:
@@ -51,7 +49,8 @@ The multi-garment implementation builds upon IDM-VTON's architecture with severa
 2. The stacked image maintains proper spatial relationships
 3. Processing occurs through the existing pipeline with minimal modifications
 
-![Text Guided Architecture Overview](assets/images/textguided_architecture.png)
+
+![Multi Garment Architecture Overview](assets/images/multigarment_architecture.png)
 
 ### Text-Guided Modification
 
@@ -70,6 +69,9 @@ The text-guided virtual try-on system follows a multi-stage process:
 2. Fine-tuned ControlNet guidance for structural integrity
 3. Region preservation techniques for maintaining non-target areas
 
+
+![Text Guided Architecture Overview](assets/images/textguided_architecture.png)
+
 ## Results
 
 ### Multi-Garment Virtual Try-On
@@ -84,7 +86,7 @@ Our implementation demonstrates strong performance across various garment combin
 
 The text-guided approach shows impressive capabilities in modifying garments based on natural language descriptions:
 
-![Text-Guided Results 1](assets/images/textguided_demo_image_1.png)
+![Text-Guided Results 1](assets/images/textguided_demo_image_1.jpeg)
 ![Text-Guided Results 2](assets/images/textguided_demo_image_2.png)
 ![Text-Guided Results 3](assets/images/textguided_demo_image_3.png)
 
