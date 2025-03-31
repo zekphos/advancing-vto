@@ -106,7 +106,7 @@ title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 </div>
 
 ![Text-Guided Results 1](assets/images/textguided_demo_image_1.jpeg)
-![Text-Guided Results 2](assets/images/textguided_demo_image_2.png)
+![Text-Guided Results 2](assets/images/textguided_demo_image_2.jpeg)
 ![Text-Guided Results 3](assets/images/textguided_demo_image_3.png)
 
 ## Team
