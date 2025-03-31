@@ -17,7 +17,9 @@ title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 </div>
 <br>
 
-## Overview
+<div align="center">
+<h2>Overview</h2>
+</div>
 
 <div style="text-align: justify; text-justify: inter-word;">
 <p>Our research introduces two innovative approaches to virtual try-on technology, each addressing distinct challenges in the field:</p>
@@ -45,7 +47,9 @@ title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 <br>
 <br>
 
-## Method
+<div align="center">
+<h2>Method</h2>
+</div>
 
 ### Multi-Garment Processing
 
@@ -93,7 +97,9 @@ title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 <br>
 <br>
 
-## Results
+<div align="center">
+<h2>Results</h2>
+</div>
 
 ### Multi-Garment Virtual Try-On
 
@@ -118,7 +124,9 @@ title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 <br>
 <br>
 
-## Team
+<div align="center">
+<h2>Team</h2>
+</div>
 
 **Wu Jiakai** - Multi-Garment Virtual Try-On
 
@@ -136,7 +144,9 @@ title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 <br>
 <br>
 
-## Academic Purpose
+<div align="center">
+<h2>Academic Purpose</h2>
+</div>
 
 <div style="text-align: justify; text-justify: inter-word;">
 <p>This work was conducted solely for academic and research purposes as part of a university capstone project. The implementations and adaptations presented here aim to explore and advance virtual try-on technology from an educational perspective, contributing to the academic discourse in this field. Neither implementation is intended for commercial deployment, and both serve primarily as technical demonstrations of what's possible within the current technological framework. Our goal is to share knowledge, foster further research, and provide learning opportunities for students and researchers interested in computer vision, machine learning, and fashion technology applications.</p>
@@ -144,7 +154,9 @@ title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 <br>
 <br>
 
-## References
+<div align="center">
+<h2>References</h2>
+</div>
 
 **Foundational Projects:**
 - IDM-VTON: [github.com/yisol/IDM-VTON](https://github.com/yisol/IDM-VTON)
@@ -162,7 +174,9 @@ title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 </div>
 <br>
 
-## Acknowledgments
+<div align="center">
+<h2>Acknowledgments</h2>
+</div>
 
 <div style="text-align: justify; text-justify: inter-word;">
 <p>We extend our deepest gratitude to Assistant Professor Xu Bingjie for her exceptional guidance, technical insights, and unwavering support throughout this project. Her expertise in computer vision and machine learning significantly shaped our approach and implementation strategies. Professor Xu's patient mentorship, thoughtful feedback, and encouragement to explore innovative solutions were instrumental in helping us overcome technical challenges and achieve our research objectives. We are particularly thankful for her dedication in providing timely reviews of our progress and for creating an environment that fostered both academic rigor and creative exploration.</p>
