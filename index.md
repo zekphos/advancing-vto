@@ -65,6 +65,8 @@ title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 
 ![Multi Garment Architecture Overview](assets/images/multigarment_architecture.png)
 
+<br>
+
 ### Text-Guided Modification
 
 <div style="text-align: justify; text-justify: inter-word;">
@@ -111,7 +113,7 @@ title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 
 ## Team
 
-**Jiakai Wu** - Multi-Garment Virtual Try-On
+**Wu Jiakai** - Multi-Garment Virtual Try-On
 
 - Implemented vertical stacking architecture
 - Developed parallel CLIP processing with max pooling
