@@ -1,118 +1,126 @@
 ---
 
 title: "Advancing Fine-Grained & Controllable Virtual Try-On"
-# header:
-#   image: /assets/img/vto-banner.jpg
+
 ---
 
-## Multi-Garment Virtual Try-on: Enhancing IDM-VTON for Comprehensive Digital Fashion Visualization
+<div align="center">
+<p>Leshane Lee, Wu Jiakai</p>
+</div>
 
 ## Abstract
 
-This project presents the technical development and implementation of a multi-garment virtual try-on system that extends the IDM-VTON architecture to process upper and lower garment images simultaneously. The project focuses on modifying the diffusion-based approach to accommodate multiple input streams while preserving the fine-grained texture and pattern details that are crucial for realistic garment visualization. Key technical contributions include the development of a parallel processing pipeline that handles multiple garment inputs, implementation of a feature fusion mechanism for combining garment features, and a novel CLIP processing workflow where upper and lower garments are processed independently through CLIP, followed by max pooling on the features for both garments. Each garment's features are then resized to match a target width while maintaining the pooled height, before being concatenated along the height dimension for further processing. Testing across various garment combinations demonstrates that the enhanced architecture successfully generates comprehensive outfit visualizations with particularly strong performance for common garment types such as t-shirts and long pants. This work addresses a fundamental limitation in current virtual try-on technology and demonstrates that diffusion-based approaches can be successfully extended beyond single-garment processing without sacrificing the detail preservation capabilities that make these methods valuable.
+This research presents two complementary advancements in virtual try-on technology that address critical limitations in current systems. The first enhances IDM-VTON to enable simultaneous processing of multiple garments while preserving intricate details. This implementation employs vertical stacking of upper and lower garment images, parallel CLIP processing with max pooling feature extraction, and height-based feature concatenation to maintain proper spatial relationships between garments. A full-body masking strategy ensures coherent outfit visualization while maintaining the detail preservation capabilities of the original architecture. The second innovation introduces text-guided garment modification capabilities by improving the EditAnything framework through sophisticated prompt engineering and ControlNet fine-tuning. This approach leverages the Segment Anything Model (SAM) for automatic clothing detection, GroundingDINO for text-image alignment, and Stable Diffusion with specialized ControlNet architecture to transform text descriptions into precise visual modifications. The implementation includes dynamic prompt enhancement, comprehensive negative prompting, and region preservation techniques that maintain image integrity during modification. Together, these technical advancements represent significant progress in addressing core challenges in virtual try-on systems: comprehensive outfit visualization and intuitive garment customization through natural language.
 
 ## Overview
 
-Traditional virtual try-on systems face a critical limitation: they can only process single garments at a time. This project extends IDM-VTON's architecture to handle multiple garments simultaneously while preserving its exceptional detail fidelity.
+Our research introduces two innovative approaches to virtual try-on technology, each addressing distinct challenges in the field:
 
-This approach employs:
-- Vertical stacking of garment images
+### Multi-Garment Virtual Try-On
+Extends IDM-VTON's architecture to handle multiple garments simultaneously through:
+- Vertical stacking of garment images for spatial coherence
 - Parallel CLIP processing with max pooling feature extraction
-- Height-based feature concatenation
-- Full-body masking strategies
+- Height-based feature concatenation for network compatibility
+- Full-body masking strategies for comprehensive visualization
+
+### Text-Guided Virtual Try-On
+Enhances the EditAnything framework for intuitive clothing modification through:
+- Automatic garment detection using SAM and GroundingDINO
+- Advanced prompt engineering for precise modification control
+- ControlNet fine-tuning for fashion-specific transformations
+- Region preservation techniques for maintaining image integrity
 
 ## Method
 
-![Architecture Overview](assets/images/multigarment_architecture.png)
+![Multi Garment Architecture Overview](assets/images/multigarment_architecture.png)
 
-### CLIP Feature Processing
+### Multi-Garment Processing
 
-A key innovation is our approach to CLIP feature processing for multiple garments:
+The multi-garment implementation builds upon IDM-VTON's architecture with several key innovations:
 
+**CLIP Feature Processing:**
 1. Upper and lower garments are processed through CLIP independently
 2. Max pooling is applied to extract salient features from each garment
 3. Each garment's features are resized to match target width while maintaining pooled height
 4. Features are concatenated along the height dimension
 
-This approach preserves the distinctive characteristics of each garment while maintaining compatibility with existing network components.
-
-### Vertical Garment Stacking
-
-To handle multiple physical garment images through GarmentNet:
-
+**Vertical Garment Stacking:**
 1. Upper and lower garments are vertically stacked
 2. The stacked image maintains proper spatial relationships
 3. Processing occurs through the existing pipeline with minimal modifications
 
+![Text Guided Architecture Overview](assets/images/textguided_architecture.png)
+
+### Text-Guided Modification
+
+The text-guided virtual try-on system follows a multi-stage process:
+
+**Input Processing:**
+1. Natural language description of desired garment modifications
+2. Image with the target garment to be modified
+
+**Automatic Region Detection:**
+1. GroundingDINO processes both input image and text description
+2. SAM performs pixel-level segmentation of the target clothing area
+
+**Modification Generation:**
+1. Dynamic prompt enhancement with fashion-specific attributes
+2. Fine-tuned ControlNet guidance for structural integrity
+3. Region preservation techniques for maintaining non-target areas
+
 ## Results
 
-This implementation demonstrates strong performance across various garment combinations:
+### Multi-Garment Virtual Try-On
 
-![Results Gallery](assets/images/multigarment_demo_image_1.jpg)
-![Results Gallery](assets/images/multigarment_demo_image_2.jpg)
-![Results Gallery](assets/images/multigarment_demo_image_3.jpg)
-![Results Gallery](assets/images/multigarment_demo_image_4.jpg)
-![Results Gallery](assets/images/multigarment_demo_image_5.jpg)
-![Results Gallery](assets/images/multigarment_demo_image_6.jpg)
+Our implementation demonstrates strong performance across various garment combinations:
 
-## Acknowledgments
+![Multi-Garment Results 4](assets/images/multigarment_demo_image_4.jpg)
+![Multi-Garment Results 5](assets/images/multigarment_demo_image_5.jpg)
+![Multi-Garment Results 6](assets/images/multigarment_demo_image_6.jpg)
 
-We thank Assistant Professor Xu Bingjie for supervision and guidance throughout this project.
+### Text-Guided Virtual Try-On
 
+The text-guided approach shows impressive capabilities in modifying garments based on natural language descriptions:
 
-## Text-Guided Garment Transformation: Advanced Virtual Try-On with Natural Language Control
+![Text-Guided Results 1](assets/images/textguided_demo_image_1.png)
+![Text-Guided Results 2](assets/images/textguided_demo_image_2.png)
+![Text-Guided Results 3](assets/images/textguided_demo_image_3.png)
 
-## Abstract
+## Team
 
-This research introduces a comprehensive text-guided virtual try-on system that improves the EditAnything framework through advanced prompt engineering techniques and ControlNet fine-tuning. Utilizing cutting-edge AI technologies, including the Segment Anything Model (SAM), GroundingDINO for object detection, and Stable Diffusion with ControlNet architecture, the system facilitates seamless text-prompted garment visualization without manual intervention. The combined approach of fine-tuned ControlNet and sophisticated prompt engineering generates high-quality apparel modifications while maintaining image integrity and natural appearance, demonstrating significant improvements in both modification quality and usability. Quantitative evaluation shows improvements of up to 90.5% in KID scores and 7.3% in structural similarity, responding to the escalating need for intuitive, automated garment alterations in e-commerce settings.
+**Jiakai Wu** - Multi-Garment Virtual Try-On
 
-## Overview
+- Implemented vertical stacking architecture
+- Developed parallel CLIP processing with max pooling
+- Created full-body masking strategies
+- Enhanced IDM-VTON for multi-garment processing
 
-In the rapidly evolving landscape of fashion e-commerce, the ability to visualize clothing modifications instantly and accurately has become increasingly crucial. This project presents an enhanced version of the EditAnything framework, specifically optimized for automatic clothing modification through text prompts.
+**Leshane Lee** - Text-Guided Virtual Try-On
 
-The virtual try-on system integrates numerous advanced AI components to provide a comprehensive solution for text-guided clothing alteration. At its core, the system utilizes an enhanced version of ControlNet, fine-tuned specifically for fashion applications through four complete training epochs. This fine-tuning process substantially improves the model's ability to understand and implement clothing-specific modifications while maintaining visual coherence.
+- Developed dynamic prompt engineering techniques
+- Implemented specific garment masking with SAM and GroundingDINO
+- Fine-tuned ControlNet for fashion-specific applications
+- Enhanced EditAnything framework for garment modifications
 
-Key features include:
-- Automatic clothing region detection using Segment Anything Model (SAM)
-- Sophisticated prompt engineering to optimize text descriptions
-- Cross-attention mechanisms for accurate style transfer
-- Region preservation techniques for maintaining image integrity
+## Academic Purpose
 
-## Method
+This work was conducted solely for academic and research purposes as part of a university capstone project. The implementations and adaptations presented here aim to explore and advance virtual try-on technology from an educational perspective, contributing to the academic discourse in this field. Neither implementation is intended for commercial deployment, and both serve primarily as technical demonstrations of what's possible within the current technological framework. Our goal is to share knowledge, foster further research, and provide learning opportunities for students and researchers interested in computer vision, machine learning, and fashion technology applications.
 
-![System Architecture](assets/images/text_guided_architectuxt-guided virtual try-on system employs a sophisticated multi-stage architecture designed to transform descriptive text and reference images into photorealistic visualizations of clothing items on human subjects.
+## References
 
-### Input Layer Components
+**Foundational Projects:**
+- IDM-VTON: [github.com/yisol/IDM-VTON](https://github.com/yisol/IDM-VTON)
+- EditAnything: [github.com/sail-sg/EditAnything](https://github.com/sail-sg/EditAnything)
 
-The system begins with processing both textual and visual input:
+**Key Technologies:**
+- Segment Anything Model (SAM)
+- Stable Diffusion XL Inpainting
+- ControlNet Architecture
+- CLIP ViT-H/14
+- IP-Adapter
 
-1. **Text Input Processing**: Accepts natural language descriptions of desired clothing modifications
-2. **Dynamic Prompt Engineering**: Enhances basic text prompts by adding relevant clothing attributes and specifications
-3. **Input Image Processing**: Prepares the source person image for downstream processing
-
-### Core Processing Layer
-
-The detection and segmentation of target garment areas happens through:
-
-1. **GroundingDINO**: Bridges natural language understanding with visual elements by processing both input image and text description
-2. **Segment Anything Model (SAM)**: Performs pixel-level segmentation of the target clothing area
-
-### Text-Guided Modification Process
-
-The system translates natural language descriptions into visual changes through:
-
-1. **Diffusion-Based Image Generation**: Employs Stable Diffusion with ControlNet for high-quality image generation
-2. **Pattern and Material Intelligence**: Incorporates domain knowledge about clothing to improve output quality
-3. **Comprehensive Negative Prompting**: Guides the diffusion model away from common failure modes
-
-### Region Preservation Techniques
-
-To maintain the integrity of non-target regions, the system implements:
-
-1. **Precise Mask Generation**: Creates highly accurate binary masks corresponding to clothing items
-2. **Inpainting-Based Modification**: Preserves pixel values outside the masked area
-3. **Structural Guidance with ControlNet**: Maintains the structural integrity of clothing items
+All credit for the original implementations goes to their respective authors and developers. Our work builds upon these foundation models and would not be possible without their pioneering contributions to the field. We express our sincere gratitude to the research teams behind these technologies for making their work available to the academic community.
 
 ## Acknowledgments
 
-We thank Assistant Professor Xu Bingjie for supervision and guidance throughout this project.
+We extend our deepest gratitude to Assistant Professor Xu Bingjie for her exceptional guidance, technical insights, and unwavering support throughout this project. Her expertise in computer vision and machine learning significantly shaped our approach and implementation strategies. Professor Xu's patient mentorship, thoughtful feedback, and encouragement to explore innovative solutions were instrumental in helping us overcome technical challenges and achieve our research objectives. We are particularly thankful for her dedication in providing timely reviews of our progress and for creating an environment that fostered both academic rigor and creative exploration.
