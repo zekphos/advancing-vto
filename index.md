@@ -128,7 +128,7 @@ title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 ## Academic Purpose
 
 <div style="text-align: justify; text-justify: inter-word;">
-<p>This work was conducted solely for academic and research purposes as part of a university capstone project. The implementations and adaptations presented here aim to explore and advance virtual try-on technology from an educational perspective, contributing to the academic discourse in this field. Neither implementation is intended for commercial deployment, and both serve primarily as technical demonstrations of what's possible within the current technological framework. Our goal is to share knowledge, foster further research, and provide learning opportunities for students and researchers interested in computer vision, machine learning, and fashion technology applications.
+<p>This work was conducted solely for academic and research purposes as part of a university capstone project. The implementations and adaptations presented here aim to explore and advance virtual try-on technology from an educational perspective, contributing to the academic discourse in this field. Neither implementation is intended for commercial deployment, and both serve primarily as technical demonstrations of what's possible within the current technological framework. Our goal is to share knowledge, foster further research, and provide learning opportunities for students and researchers interested in computer vision, machine learning, and fashion technology applications.</p>
 
 </div>
 
@@ -146,12 +146,12 @@ title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 - IP-Adapter
 
 <div style="text-align: justify; text-justify: inter-word;">
-All credit for the original implementations goes to their respective authors and developers. Our work builds upon these foundation models and would not be possible without their pioneering contributions to the field. We express our sincere gratitude to the research teams behind these technologies for making their work available to the academic community.
+<p>All credit for the original implementations goes to their respective authors and developers. Our work builds upon these foundation models and would not be possible without their pioneering contributions to the field. We express our sincere gratitude to the research teams behind these technologies for making their work available to the academic community.</p>
 
 </div>
 
 ## Acknowledgments
 
 <div style="text-align: justify; text-justify: inter-word;">
-We extend our deepest gratitude to Assistant Professor Xu Bingjie for her exceptional guidance, technical insights, and unwavering support throughout this project. Her expertise in computer vision and machine learning significantly shaped our approach and implementation strategies. Professor Xu's patient mentorship, thoughtful feedback, and encouragement to explore innovative solutions were instrumental in helping us overcome technical challenges and achieve our research objectives. We are particularly thankful for her dedication in providing timely reviews of our progress and for creating an environment that fostered both academic rigor and creative exploration.</p>
+<p>We extend our deepest gratitude to Assistant Professor Xu Bingjie for her exceptional guidance, technical insights, and unwavering support throughout this project. Her expertise in computer vision and machine learning significantly shaped our approach and implementation strategies. Professor Xu's patient mentorship, thoughtful feedback, and encouragement to explore innovative solutions were instrumental in helping us overcome technical challenges and achieve our research objectives. We are particularly thankful for her dedication in providing timely reviews of our progress and for creating an environment that fostered both academic rigor and creative exploration.</p>
 </div>
