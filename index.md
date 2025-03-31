@@ -16,7 +16,6 @@ title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 <p>This research presents two complementary advancements in virtual try-on technology that address critical limitations in current systems. The first enhances IDM-VTON to enable simultaneous processing of multiple garments while preserving intricate details. This implementation employs vertical stacking of upper and lower garment images, parallel CLIP processing with max pooling feature extraction, and height-based feature concatenation to maintain proper spatial relationships between garments. A full-body masking strategy ensures coherent outfit visualization while maintaining the detail preservation capabilities of the original architecture. The second innovation introduces text-guided garment modification capabilities by improving the EditAnything framework through sophisticated prompt engineering and ControlNet fine-tuning. This approach leverages the Segment Anything Model (SAM) for automatic clothing detection, GroundingDINO for text-image alignment, and Stable Diffusion with specialized ControlNet architecture to transform text descriptions into precise visual modifications. The implementation includes dynamic prompt enhancement, comprehensive negative prompting, and region preservation techniques that maintain image integrity during modification. Together, these technical advancements represent significant progress in addressing core challenges in virtual try-on systems: comprehensive outfit visualization and intuitive garment customization through natural language.</p>
 </div>
 <br>
-<br>
 
 ## Overview
 
@@ -105,6 +104,7 @@ title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 ![Multi-Garment Results 4](assets/images/multigarment_demo_image_4.jpg)
 ![Multi-Garment Results 5](assets/images/multigarment_demo_image_5.jpg)
 ![Multi-Garment Results 6](assets/images/multigarment_demo_image_6.jpg)
+<br>
 
 ### Text-Guided Virtual Try-On
 
@@ -140,7 +140,6 @@ title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 
 <div style="text-align: justify; text-justify: inter-word;">
 <p>This work was conducted solely for academic and research purposes as part of a university capstone project. The implementations and adaptations presented here aim to explore and advance virtual try-on technology from an educational perspective, contributing to the academic discourse in this field. Neither implementation is intended for commercial deployment, and both serve primarily as technical demonstrations of what's possible within the current technological framework. Our goal is to share knowledge, foster further research, and provide learning opportunities for students and researchers interested in computer vision, machine learning, and fashion technology applications.</p>
-
 </div>
 <br>
 <br>
@@ -160,8 +159,8 @@ title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 
 <div style="text-align: justify; text-justify: inter-word;">
 <p>All credit for the original implementations goes to their respective authors and developers. Our work builds upon these foundation models and would not be possible without their pioneering contributions to the field. We express our sincere gratitude to the research teams behind these technologies for making their work available to the academic community.</p>
-
 </div>
+<br>
 
 ## Acknowledgments
 
