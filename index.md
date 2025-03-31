@@ -8,7 +8,9 @@ title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 <p>Leshane Lee, Wu Jiakai</p>
 </div>
 
-## Abstract
+<div align="center">
+<h2>Abstract</h2>
+</div>
 
 This research presents two complementary advancements in virtual try-on technology that address critical limitations in current systems. The first enhances IDM-VTON to enable simultaneous processing of multiple garments while preserving intricate details. This implementation employs vertical stacking of upper and lower garment images, parallel CLIP processing with max pooling feature extraction, and height-based feature concatenation to maintain proper spatial relationships between garments. A full-body masking strategy ensures coherent outfit visualization while maintaining the detail preservation capabilities of the original architecture. The second innovation introduces text-guided garment modification capabilities by improving the EditAnything framework through sophisticated prompt engineering and ControlNet fine-tuning. This approach leverages the Segment Anything Model (SAM) for automatic clothing detection, GroundingDINO for text-image alignment, and Stable Diffusion with specialized ControlNet architecture to transform text descriptions into precise visual modifications. The implementation includes dynamic prompt enhancement, comprehensive negative prompting, and region preservation techniques that maintain image integrity during modification. Together, these technical advancements represent significant progress in addressing core challenges in virtual try-on systems: comprehensive outfit visualization and intuitive garment customization through natural language.
 
