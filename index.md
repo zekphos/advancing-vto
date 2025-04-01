@@ -5,7 +5,8 @@ title: "Advancing Fine-Grained & Controllable Virtual Try-On"
 ---
 
 <div align="center">
-<p>Leshane Lee, Wu Jiakai</p>
+<p>Leshane Lee*, Wu Jiakai*, Bingjie Xu</p>
+<p>InfoComm Technology Cluster, Singapore Institute of Technology (SIT)</p>
 </div>
 
 <div align="center">
